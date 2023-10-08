@@ -19,8 +19,8 @@ class singlylinkedlist{
 		}else {
 			node newnode = new node(d);
 			node traverser = head;
-			 if(traverser.next!=null) {
-				 traverser = head.next;
+			 while(traverser.next!=null) {
+				 traverser = traverser.next;
 			 }
 			 traverser.next = newnode;
 		}
@@ -28,17 +28,21 @@ class singlylinkedlist{
 	
 	public  void print(singlylinkedlist list) {
 		       node traverser = list.head;
-		    if(traverser.next!=null) {
+		    while(traverser.next!=null) {
 		    	 System.out.print(traverser.data + "-->");
+		    	 traverser = traverser.next;
 		    	
 		    }
-		  
+		    System.out.print(traverser.data);
 	}
 	
 	public static void main(String[]args) {
 		singlylinkedlist  object  = new singlylinkedlist();
 		 object.insert(object, 5);
 		 object.insert(object,10);
+		 object.insert(object,20);
+		 object.insert(object,30);
+		 object.insert(object,60);
 		 object.print(object);
 	}
 }
