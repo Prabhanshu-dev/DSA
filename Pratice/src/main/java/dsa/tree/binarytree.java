@@ -69,11 +69,35 @@ class binarytree{
 		    if(base2==null) {
 		    	return;
 		    }
-		    System.out.print(base2.data);
+		    System.out.print(base2.data + " ");
 		    preorderbinarytree(base2.left);
 		    preorderbinarytree(base2.right);
 		   
 	 }
+	 
+	 public void inorderbinarytree(Node base2) {
+		    if(base2==null) {
+		    	return;
+		    }
+		   
+		    preorderbinarytree(base2.left);
+		    System.out.print(base2.data + " ");
+		    preorderbinarytree(base2.right);
+		   
+	 }
+	 
+	 public void postorderbinarytree(Node base2) {
+		    if(base2==null) {
+		    	return;
+		    }
+		   
+		    preorderbinarytree(base2.left);
+		    System.out.print(base2.data + " ");
+		    preorderbinarytree(base2.right);
+		   
+	 }
+	 
+	 
 	 
 	 public static void main(String[]args) {
 		 
@@ -83,8 +107,14 @@ class binarytree{
 		 object.inserttreeright(object, 3);
 		 object.inserttreeright(object, 4);
 		// object.printbinarytreecreated(object);
+		 System.out.println("pre order");
 		 object.preorderbinarytree(object.base);
-		 
+		 System.out.println(" ");
+		 System.out.println("in order ");
+		 object.inorderbinarytree(object.base);
+		 System.out.println(" ");
+		 System.out.println("post order");
+		 object.postorderbinarytree(object.base);
 		 
 		 
 	 }
