@@ -64,13 +64,28 @@ class binarytree{
 		   // System.out.print(traverser.right.data);
 		   
 	 }
+	 
+	 public void preorderbinarytree(Node base2) {
+		    if(base2==null) {
+		    	return;
+		    }
+		    System.out.print(base2.data);
+		    preorderbinarytree(base2.left);
+		    preorderbinarytree(base2.right);
+		   
+	 }
+	 
 	 public static void main(String[]args) {
 		 
 		 binarytree object = new binarytree();
-		 object.inserttreeleft(object , 5);
-		 object.inserttreeright(object, 10);
-		 object.inserttreeleft(object, 15);
-		 object.printbinarytreecreated(object);
+		 object.inserttreeleft(object , 9);
+		 object.inserttreeleft(object, 2);
+		 object.inserttreeright(object, 3);
+		 object.inserttreeright(object, 4);
+		// object.printbinarytreecreated(object);
+		 object.preorderbinarytree(object.base);
+		 
+		 
 		 
 	 }
 }
