@@ -30,7 +30,7 @@ class binarytree{
 			 while(traverser.left!=null) {
 				 traverser = traverser.left;
 			 }
-			 traverser = newnode;
+			 traverser.left = newnode;
 		 }
 		 
 	 }
@@ -44,23 +44,33 @@ class binarytree{
 			 while(traverser.right!=null) {
 				 traverser = traverser.right;
 			 }
-			 traverser = newnode;
+			 traverser.right = newnode;
 		 }
 		 
 	 }
 	 public void printbinarytreecreated(binarytree tree) {
 		 Node traverser = tree.base;
-		    while(traverser.left!=null) {
-		    	 System.out.print(traverser.data + "-->");
+		    while(traverser!=null) {
+		    	 System.out.print(traverser.data);
 		    	 traverser = traverser.left;
 		    }
-		    System.out.print(traverser.data);
+		    Node traverser1 = tree.base.right;
+		    while(traverser1!=null) {
+		    	System.out.print("--->");
+		    	 System.out.print(traverser1.data);
+		    	 traverser1 = traverser1.right;
+		    }
+		   // System.out.print(traverser.data);
+		   // System.out.print(traverser.right.data);
 		   
 	 }
 	 public static void main(String[]args) {
 		 
 		 binarytree object = new binarytree();
 		 object.inserttreeleft(object , 5);
+		 object.inserttreeright(object, 10);
+		 object.inserttreeleft(object, 15);
+		 object.printbinarytreecreated(object);
 		 
 	 }
 }
