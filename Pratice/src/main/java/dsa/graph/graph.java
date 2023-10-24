@@ -35,9 +35,12 @@ class graph{
 	 
 	 public static void main( String[]args){
 		graph  g = new graph(4);
-		g.intializematrixnodes(0,1);
+		/*g.intializematrixnodes(0,1);
 		g.intializematrixnodes(1, 2);
 		g.intializematrixnodes(2, 3);
+		g.intializematrixnodes(3, 3);*/
+		 g.intializematrixnodes(0, 0);
+		 g.intializematrixnodes(0, 0);
 		System.out.println(g);
 	 }
 	 
