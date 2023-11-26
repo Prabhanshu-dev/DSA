@@ -19,7 +19,7 @@ class streamapi
 				                .sorted()
 				                .map(n -> n*2)
 				                .forEach(n -> System.out.println(n));
-		//  Stream<Integer> sorteddata =  data.sorted();
+		//  Stream<Integer> sorteddata =  data.sorted(); 
 		//  sorteddata.forEach(n->System.out.println(n));
 		// Stream<Integer> mappedData =  data.map(n->n*2);
 		// mappedData.forEach(n->System.out.println(n));
