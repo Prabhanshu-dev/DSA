@@ -44,5 +44,6 @@ class singlylinkedlist{
 		 object.insert(object,30);
 		 object.insert(object,60);
 		 object.print(object);
+		 
 	}
 }
