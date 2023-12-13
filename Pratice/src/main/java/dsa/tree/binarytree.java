@@ -4,12 +4,12 @@ package dsa.tree;
 
 class binarytree{
 	
-	 Node  base = null;
+	 Node  base = null;  // contains the start address of the whole binary tree
 	 
 	 class Node{
-		    int data =0;
-		    Node left =null;
-		    Node right = null;
+		    int data =0;  // here we are creating a node , who has data = 0
+		    Node left =null; // we are setting  left child node  address of the node to null
+		    Node right = null; // we are setting right child node address of the node to null
 		    Node(int d){
 		    	data = d;
 		    }
@@ -17,20 +17,20 @@ class binarytree{
 	 }
 	 
 	 public Node createbinarytreenode(int d) {
-		 Node newnode = new Node(d);
+		 Node newnode = new Node(d);   // here we are creating the node  with value of d who has right and left
 		 return newnode;
 	 }
 	 public void inserttreeleft(binarytree tree ,int d) {
 		 if(tree.base == null) {
-			 Node newnodemade =  createbinarytreenode(d);
-			   base= newnodemade; 
+			 Node newnodemade =  createbinarytreenode(d); // first we create tree contain any  data d
+			   base= newnodemade;  // then assigning that newnode address to base(root) of the binary tree
 		 }else {
-			 Node newnode = new Node(d);
-			 Node traverser = base;
+			 Node newnode = new Node(d); 
+			 Node traverser = base;  // intailizing the traveser with address of base means both traverser and base are pointing to node that is start node of the tree
 			 while(traverser.left!=null) {
 				 traverser = traverser.left;
 			 }
-			 traverser.left = newnode;
+			 traverser.left = newnode;  // put newnode address into the left  child of the traverser
 		 }
 		 
 	 }
