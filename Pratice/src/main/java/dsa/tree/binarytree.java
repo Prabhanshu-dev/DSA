@@ -119,3 +119,6 @@ class binarytree{
 		 
 	 }
 }
+
+// pratice trees inorder preorder and post order using stacks 
+// and recursion using  trees. 
