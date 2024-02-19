@@ -21,8 +21,14 @@
 
 5.   then we move forward in both l1 and l2  then we do l1.next and l2.next 
            then again we add  add values of l1.val and l2.val  	  we will get 10 as sum /any more than digit value .
-             then   to get the carry  we will  10/10 = 1  will be the carry 
-             and to get one's place we will 10%10 =  0 , which we will put at place of  dummynode2.val =0;			 
+             then   to get the carry  we will  10/10 = 1  will be the carry , store as global variable 
+             and to get one's place we will 10%10 =  0 , which we will put at place of  dummynode2.val =0;	
+
+6.     and we will create new node and  update l1 and l2 value in it.	
+        we will  again add l1 and l2 and also add carry to it .
+       so if there is no next value available then also will add the carry to the next value and update the dummy node2.val
+
+7.  at last traverse in reverse element and extract each value and print it .	   
          
 
 sum =  0+2+7 = 7		 
