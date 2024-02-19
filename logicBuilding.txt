@@ -1,0 +1,22 @@
+1. 2-->4-->3       2--->4 -->0
+   5-->6-->4       2--->4-->5
+                   4 -->8--->5 
+                       584
+    8 --->  0 -->  7
+	
+	
+	708
+	
+	
+2.  traverse the linked list and extract each element in both the linked list at single time   ,  when will extract 2,at the 
+    same time extract 5 as well and save the value in a variable .
+
+
+3.   put that value in a  newly created linked list with 0 element in it  
+            that is   a node will be created with value of 0 intially at the start of the exceution of the code  and suppose that node will be dummynode1.
+			
+
+4.   when we traverse the first node of the linkedlist 			
+         
+
+sum =  0+2+7 = 7		 
