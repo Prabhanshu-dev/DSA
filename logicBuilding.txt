@@ -16,7 +16,13 @@
             that is   a node will be created with value of 0 intially at the start of the exceution of the code  and suppose that node will be dummynode1.
 			
 
-4.   when we traverse the first node of the linkedlist 			
+4.   when we traverse the first node of the linkedlist 	 that is when we reach  2  and when we reach 5   
+      then we will add both values  ,sum of that will be put in place of 0  ,that 0 will become 7 and then we will create another dummynode2 and put its address in dummynode1.next 
+
+5.   then we move forward in both l1 and l2  then we do l1.next and l2.next 
+           then again we add  add values of l1.val and l2.val  	  we will get 10 as sum /any more than digit value .
+             then   to get the carry  we will  10/10 = 1  will be the carry 
+             and to get one's place we will 10%10 =  0 , which we will put at place of  dummynode2.val =0;			 
          
 
 sum =  0+2+7 = 7		 
