@@ -1,0 +1,34 @@
+1. 2-->4-->3       2--->4 -->0
+   5-->6-->4       2--->4-->5
+                   4 -->8--->5 
+                       584
+    8 --->  0 -->  7
+	
+	
+	708
+	
+	
+2.  traverse the linked list and extract each element in both the linked list at single time   ,  when will extract 2,at the 
+    same time extract 5 as well and save the value in a variable .
+
+
+3.   put that value in a  newly created linked list with 0 element in it  
+            that is   a node will be created with value of 0 intially at the start of the exceution of the code  and suppose that node will be dummynode1.
+			
+
+4.   when we traverse the first node of the linkedlist 	 that is when we reach  2  and when we reach 5   
+      then we will add both values  ,sum of that will be put in place of 0  ,that 0 will become 7 and then we will create another dummynode2 and put its address in dummynode1.next 
+
+5.   then we move forward in both l1 and l2  then we do l1.next and l2.next 
+           then again we add  add values of l1.val and l2.val  	  we will get 10 as sum /any more than digit value .
+             then   to get the carry  we will  10/10 = 1  will be the carry , store as global variable 
+             and to get one's place we will 10%10 =  0 , which we will put at place of  dummynode2.val =0;	
+
+6.     and we will create new node and  update l1 and l2 value in it.	
+        we will  again add l1 and l2 and also add carry to it .
+       so if there is no next value available then also will add the carry to the next value and update the dummy node2.val
+
+7.  at last traverse in reverse element and extract each value and print it .	   
+         
+
+sum =  0+2+7 = 7		 
